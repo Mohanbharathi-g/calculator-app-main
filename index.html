@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator App</title>
+
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <!-- fontAwesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body id="body" class="body violet-bg">
+    <main>
+      <div class="header">
+        <div class="title-section">
+          <h1 class="title violet-h" id="title">calc</h1>
+        </div>
+        <div class="theme-container">
+          <p class="para violet-p" id="para">theme</p>
+          <label class="switch">
+            <input type="checkbox" name="theme" id="theme-toggle" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="display-container">
+        <div class="error-msg">
+          <p class="error violet-error" id="error">invalid</p>
+        </div>
+        <input type="text" id="display" class="display violet-c" />
+      </div>
+      <div class="button-container violet-d">
+        <input
+          type="button"
+          value="7"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('7')"
+        />
+        <input
+          type="button"
+          value="8"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('8')"
+        />
+        <input
+          type="button"
+          value="9"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('9')"
+        />
+        <input
+          type="button"
+          value="del"
+          class="btns violet-del"
+          id="del-btn"
+          onclick="del()"
+        />
+        <input
+          type="button"
+          value="4"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('4')"
+        />
+        <input
+          type="button"
+          value="5"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('5')"
+        />
+        <input
+          type="button"
+          value="6"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('6')"
+        />
+        <input
+          type="button"
+          value="+"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('+')"
+        />
+        <input
+          type="button"
+          value="1"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('1')"
+        />
+        <input
+          type="button"
+          value="2"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('2')"
+        />
+        <input
+          type="button"
+          value="3"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('3')"
+        />
+        <input
+          type="button"
+          value="-"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('-')"
+        />
+        <input
+          type="button"
+          value="."
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('.')"
+        />
+        <input
+          type="button"
+          value="0"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('0')"
+        />
+        <input
+          type="button"
+          value="/"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('/')"
+        />
+        <input
+          type="button"
+          value="*"
+          class="btns violet-btn"
+          id="btns"
+          onclick="display('*')"
+        />
+        <input
+          type="button"
+          value="reset"
+          class="btns re-btn violet-re-btn"
+          id="reset"
+          onclick="resets()"
+        />
+        <input
+          type="button"
+          value="="
+          class="btns eq-btn violet-eq-btn"
+          id="equal"
+          onclick="calculate()"
+        />
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
